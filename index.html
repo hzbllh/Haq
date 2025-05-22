@@ -1,1 +1,124 @@
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Haq Custom Frame Art - Bingkai seni kustom untuk momen spesialmu">
+    <meta name="keywords" content="custom frame art, bingkai seni, Haq art">
+    <title>Haq - Custom Frame Art</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            text-align: center;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        #gallery {
+            padding: 20px;
+        }
+        #gallery h2 {
+            margin-bottom: 20px;
+        }
+        #gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        #order {
+            padding: 20px;
+            background-color: #fff;
+        }
+        #order h2 {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        input, textarea, button {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            #gallery img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Haq Custom Frame Art</h1>
+        <p>Abadikan momenmu dengan bingkai seni kustom!</p>
+    </header>
+    <section id="gallery">
+        <h2>Galeri Produk</h2>
+        <!-- Ganti src dengan link gambar atau unggah ke folder images/ -->
+        <img src="https://via.placeholder.com/300x200?text=Frame+Art+1" alt="Frame Art 1">
+        <img src="https://via.placeholder.com/300x200?text=Frame+Art+2" alt="Frame Art 2">
+    </section>
+    <section id="order">
+        <h2>Pesan Sekarang</h2>
+        <form id="order-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+            <label for="design">Deskripsi Desain:</label>
+            <textarea id="design" required></textarea>
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+    </section>
+    <footer>
+        <p>Kontak: <a href="mailto:info@haqart.com">info@haqart.com</a> | WhatsApp: <a href="https://wa.me/+62123456789">+62 123 456 789</a></p>
+    </footer>
+    <script>
+        document.getElementById('order-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Pesanan dikirim! Kami akan menghubungi Anda.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
