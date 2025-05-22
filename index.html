@@ -6,7 +6,7 @@
     <meta name="description" content="Haq Custom Frame Art - Bingkai seni kustom untuk momen spesialmu">
     <meta name="keywords" content="custom frame art, bingkai seni, Haq art, bingkai kustom">
     <title>Haq - Custom Frame Art</title>
-    <!-- FontAwesome untuk ikon WhatsApp dan Instagram -->
+    <!-- FontAwesome untuk ikon WhatsApp dan TikTok -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
@@ -86,50 +86,6 @@
             border-radius: 8px;
         }
 
-        /* Gaya Formulir Pemesanan */
-        .order {
-            margin: 30px 0;
-            padding: 20px;
-            background-color: #1e2a44;
-            border-radius: 10px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .order h2 {
-            font-size: 2em;
-            color: #ffd700;
-            margin-bottom: 20px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        input, textarea, button {
-            margin: 10px 0;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1em;
-            background-color: #fff;
-            color: #333;
-        }
-
-        button {
-            background-color: #ffd700;
-            color: #0a1a2e;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #e6c200;
-        }
-
         /* Gaya Komunitas */
         .community {
             margin: 30px 0;
@@ -159,13 +115,13 @@
             color: #1ebe57;
         }
 
-        .community i.instagram {
-            color: #E4405F;
+        .community i.tiktok {
+            color: #69C9D0;
             transition: color 0.3s;
         }
 
-        .community a:hover i.instagram {
-            color: #C13584;
+        .community a:hover i.tiktok {
+            color: #EE1D52;
         }
 
         /* Animasi Pulse untuk Logo */
@@ -200,10 +156,6 @@
                 max-width: 100%;
             }
 
-            .order {
-                padding: 15px;
-            }
-
             .community h2 {
                 font-size: 1.5em;
             }
@@ -216,36 +168,23 @@
 </head>
 <body>
     <section class="header-section">
-        <img src="https://via.placeholder.com/100x100?text=Haq+Logo" alt="Haq Logo" class="logo">
+        <img src="https://raw.githubusercontent.com/hzbllh/Haq/refs/heads/main/file_000000000c9861f5b5b8af1d5353717c.png" alt="Haq Logo" class="logo">
         <h1>Haq - Custom Frame Art</h1>
     </section>
 
     <section class="gallery">
         <h2>Galeri Bingkai Kustom</h2>
         <div class="gallery-container">
-            <a href="#order">
+            <a href="https://wa.me/+62123456789">
                 <img src="https://via.placeholder.com/280x200?text=Frame+Art+1" alt="Frame Art 1">
             </a>
-            <a href="#order">
+            <a href="https://wa.me/+62123456789">
                 <img src="https://via.placeholder.com/280x200?text=Frame+Art+2" alt="Frame Art 2">
             </a>
-            <a href="#order">
+            <a href="https://wa.me/+62123456789">
                 <img src="https://via.placeholder.com/280x200?text=Frame+Art+3" alt="Frame Art 3">
             </a>
         </div>
-    </section>
-
-    <section class="order" id="order">
-        <h2>Pesan Bingkai Kustom</h2>
-        <form id="order-form">
-            <label for="name">Nama:</label>
-            <input type="text" id="name" placeholder="Masukkan nama Anda" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Masukkan email Anda" required>
-            <label for="design">Deskripsi Desain:</label>
-            <textarea id="design" rows="5" placeholder="Jelaskan desain bingkai yang Anda inginkan" required></textarea>
-            <button type="submit">Kirim Pesanan</button>
-        </form>
     </section>
 
     <section class="community">
@@ -253,17 +192,9 @@
         <a href="https://wa.me/+62123456789">
             <i class="fab fa-whatsapp whatsapp"></i>
         </a>
-        <a href="https://www.instagram.com/haqart">
-            <i class="fab fa-instagram instagram"></i>
+        <a href="https://www.tiktok.com/@haqart">
+            <i class="fab fa-tiktok tiktok"></i>
         </a>
     </section>
-
-    <script>
-        document.getElementById('order-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Terima kasih! Pesanan Anda telah dikirim. Kami akan segera menghubungi Anda.');
-            e.target.reset();
-        });
-    </script>
 </body>
 </html>
