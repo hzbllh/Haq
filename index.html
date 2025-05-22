@@ -4,119 +4,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Haq Custom Frame Art - Bingkai seni kustom untuk momen spesialmu">
-    <meta name="keywords" content="custom frame art, bingkai seni, Haq art">
+    <meta name="keywords" content="custom frame art, bingkai seni, Haq art, bingkai kustom">
     <title>Haq - Custom Frame Art</title>
+    <!-- FontAwesome untuk ikon WhatsApp dan Instagram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a1a2e;
+            color: #fff;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
             text-align: center;
-            line-height: 1.6;
         }
-        header {
-            background-color: #f4f4f4;
-            padding: 20px;
+
+        /* Gaya Header */
+        .header-section {
+            background-image: url('https://via.placeholder.com/1200x300?text=Haq+Custom+Frame+Art');
+            background-size: cover;
+            background-position: center;
+            padding: 50px 20px;
+            position: relative;
+            border-bottom: 2px solid #ffd700;
         }
-        header h1 {
+
+        .header-section .logo {
+            max-width: 100px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            animation: pulse 2s infinite; /* Animasi pulse pada logo */
+        }
+
+        .header-section h1 {
             font-size: 2.5em;
-            color: #333;
+            margin: 10px 0;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        header p {
-            font-size: 1.2em;
-            color: #555;
+
+        /* Gaya Galeri Produk */
+        .gallery {
+            margin: 30px 0;
         }
-        #gallery {
-            padding: 20px;
-        }
-        #gallery h2 {
+
+        .gallery h2 {
+            font-size: 2em;
+            color: #ffd700;
             margin-bottom: 20px;
         }
-        #gallery img {
-            width: 100%;
-            max-width: 300px;
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .gallery-container a {
+            display: inline-flex;
+            align-items: center;
+            background-color: #1e2a44;
+            color: #fff;
+            padding: 15px;
             margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border: 1px solid #ffd700;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-container a:hover {
+            background-color: #2a3b5a;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .gallery-container img {
+            max-width: 280px;
+            height: auto;
             border-radius: 8px;
         }
-        #order {
+
+        /* Gaya Formulir Pemesanan */
+        .order {
+            margin: 30px 0;
             padding: 20px;
-            background-color: #fff;
+            background-color: #1e2a44;
+            border-radius: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        #order h2 {
+
+        .order h2 {
+            font-size: 2em;
+            color: #ffd700;
             margin-bottom: 20px;
         }
+
         form {
             display: flex;
             flex-direction: column;
-            max-width: 400px;
-            margin: auto;
         }
+
         input, textarea, button {
             margin: 10px 0;
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 1em;
+            background-color: #fff;
+            color: #333;
         }
+
         button {
-            background-color: #333;
-            color: white;
+            background-color: #ffd700;
+            color: #0a1a2e;
             border: none;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
+
         button:hover {
-            background-color: #555;
+            background-color: #e6c200;
         }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
+
+        /* Gaya Komunitas */
+        .community {
+            margin: 30px 0;
         }
-        footer a {
+
+        .community h2 {
+            font-size: 2em;
             color: #ffd700;
-            text-decoration: none;
+            margin-bottom: 20px;
         }
+
+        .community a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 2em;
+            margin: 0 10px;
+        }
+
+        .community i.whatsapp {
+            color: #25D366;
+            transition: color 0.3s;
+        }
+
+        .community a:hover i.whatsapp {
+            color: #1ebe57;
+        }
+
+        .community i.instagram {
+            color: #E4405F;
+            transition: color 0.3s;
+        }
+
+        .community a:hover i.instagram {
+            color: #C13584;
+        }
+
+        /* Animasi Pulse untuk Logo */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Media Query untuk Responsif */
         @media (max-width: 600px) {
-            header h1 {
+            .header-section {
+                padding: 30px 10px;
+            }
+
+            .header-section .logo {
+                max-width: 80px;
+            }
+
+            .header-section h1 {
                 font-size: 1.8em;
             }
-            #gallery img {
+
+            .gallery-container a {
+                width: 80%;
+                margin: 10px auto;
+                font-size: 1em;
+                padding: 10px;
+            }
+
+            .gallery-container img {
                 max-width: 100%;
+            }
+
+            .order {
+                padding: 15px;
+            }
+
+            .community h2 {
+                font-size: 1.5em;
+            }
+
+            .community a {
+                font-size: 1.5em;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Haq Custom Frame Art</h1>
-        <p>Abadikan momenmu dengan bingkai seni kustom!</p>
-    </header>
-    <section id="gallery">
-        <h2>Galeri Produk</h2>
-        <!-- Ganti src dengan link gambar atau unggah ke folder images/ -->
-        <img src="https://via.placeholder.com/300x200?text=Frame+Art+1" alt="Frame Art 1">
-        <img src="https://via.placeholder.com/300x200?text=Frame+Art+2" alt="Frame Art 2">
+    <section class="header-section">
+        <img src="https://via.placeholder.com/100x100?text=Haq+Logo" alt="Haq Logo" class="logo">
+        <h1>Haq - Custom Frame Art</h1>
     </section>
-    <section id="order">
-        <h2>Pesan Sekarang</h2>
+
+    <section class="gallery">
+        <h2>Galeri Bingkai Kustom</h2>
+        <div class="gallery-container">
+            <a href="#order">
+                <img src="https://via.placeholder.com/280x200?text=Frame+Art+1" alt="Frame Art 1">
+            </a>
+            <a href="#order">
+                <img src="https://via.placeholder.com/280x200?text=Frame+Art+2" alt="Frame Art 2">
+            </a>
+            <a href="#order">
+                <img src="https://via.placeholder.com/280x200?text=Frame+Art+3" alt="Frame Art 3">
+            </a>
+        </div>
+    </section>
+
+    <section class="order" id="order">
+        <h2>Pesan Bingkai Kustom</h2>
         <form id="order-form">
             <label for="name">Nama:</label>
-            <input type="text" id="name" required>
+            <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Masukkan email Anda" required>
             <label for="design">Deskripsi Desain:</label>
-            <textarea id="design" required></textarea>
+            <textarea id="design" rows="5" placeholder="Jelaskan desain bingkai yang Anda inginkan" required></textarea>
             <button type="submit">Kirim Pesanan</button>
         </form>
     </section>
-    <footer>
-        <p>Kontak: <a href="mailto:info@haqart.com">info@haqart.com</a> | WhatsApp: <a href="https://wa.me/+62123456789">+62 123 456 789</a></p>
-    </footer>
+
+    <section class="community">
+        <h2>Gabung Komunitas Kami</h2>
+        <a href="https://wa.me/+62123456789">
+            <i class="fab fa-whatsapp whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/haqart">
+            <i class="fab fa-instagram instagram"></i>
+        </a>
+    </section>
+
     <script>
         document.getElementById('order-form').addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Pesanan dikirim! Kami akan menghubungi Anda.');
+            alert('Terima kasih! Pesanan Anda telah dikirim. Kami akan segera menghubungi Anda.');
             e.target.reset();
         });
     </script>
